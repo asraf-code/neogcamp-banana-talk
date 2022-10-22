@@ -1,0 +1,11 @@
+there are two ways to include JS in html:
+1. using <script> tag in the html file
+2. using javascript file and linking it in the html file (<script src="app.js" type="text/javascript"></script>)
+
+
+for input and output use: [alert] and [prompt]
+
+VanillaJS
+
+vanilla as a word is used in industry denotes it has no flavour to it: there is nothing added on top of it..
+It is the purest form of something.
