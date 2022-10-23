@@ -42,7 +42,7 @@ query for following elements:
 tag = "tagname"
 class = .classname
 id = #idname
-"element with attribute = elementname[attribute]"
+element with attribute = "elementname[attribute]"
 
 Fun examples of browser scripting: 
 accepting multiple requests on socials.
@@ -52,3 +52,20 @@ refereshing and chekcing and booking movie tickets on sites.
 .innetText = ""
 
 Talking to server: call a mock server
+using:
+Postman
+Browser: address bar
+Js: using fetch(url). This returns Json file as a response file from server.
+
+Ex:
+constructURL(text)
+
+TO catch erros define a function to console "error occured"
+function errorHandler(error) {
+    console.log("error occured", error)
+}
+.catch(errorJandler)
+
+'=>' Arrow syntax to define functions [callback]. [arrow functions in Js]
+
+
