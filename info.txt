@@ -9,3 +9,7 @@ VanillaJS
 
 vanilla as a word is used in industry denotes it has no flavour to it: there is nothing added on top of it..
 It is the purest form of something.
+
+VanillaJs is the most basic form of Javascipt without any frameworks or library.
+
+In javascript it is preferred to include <script> at the end of the <body>.
