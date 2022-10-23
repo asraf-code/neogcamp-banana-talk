@@ -13,3 +13,18 @@ It is the purest form of something.
 VanillaJs is the most basic form of Javascipt without any frameworks or library.
 
 In javascript it is preferred to include <script> at the end of the <body>.
+
+<button>
+We need to have a reference to this button inside Js using querySelector().
+[Using this reference we can style the html using Js. (DOM scripting)]
+
+querySelector is a way to tell your browser that you need the 'element' which has [id=""] ['#' is an id selector in js]
+Here we are talking to browser through the 'document.querySelector' API.
+
+Callback: when an event happens call this funciton.
+function clickEventHandler() {
+    console.log("clicked!")
+
+
+Event Listener
+btnTanslate.addEventList("action", funciton() {})
