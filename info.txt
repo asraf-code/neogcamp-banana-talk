@@ -28,3 +28,6 @@ function clickEventHandler() {
 
 Event Listener
 btnTanslate.addEventList("action", funciton() {})
+
+[Book: Eloquent Javascript]
+
