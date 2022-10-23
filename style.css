@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;700&display=swap');
+
+/* defining variables */
+:root {
+    --primary-color: #f59e0b;
+    --off-white: #f3f4f6;
+    --dark-gray: rgb(114, 114, 114);
+}
+
+body {
+    display: grid;
+    place-content: center;
+    row-gap: 2rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+h1 {
+    margin: auto;
+}
+
+textarea {
+    display: block;
+    outline: none;
+    height: 8rem;
+    margin: auto;
+    padding: 1rem;
+    border-width: medium;
+    resize: none;
+    max-width: 100%;
+}
+
+button {
+    margin: auto;
+    width: max-content;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: large;
+
+}
+
+#output-title {
+    font-weight: bold;
+    padding: 1rem;
+    margin: auto;
+}
+
+
+#output-box {
+    border: 1px solid black;
+    display: block;
+    outline: none;
+    height: 8rem;
+    margin: auto;
+    padding: 1rem;
+    border-width: medium;
+    max-width: 100%;
+}
+
+
+
+#btn-translate {
+    
+}
+
+@media (max-width:660px){
+    h1{
+        font-size: 1.5em;
+    }
+
+    textarea{
+        width: 85vw;
+    }
+
+    #output-box {
+        width: 85vw;
+    }
+
+    .info{
+        width: 90vw;
+    }
+    p{
+        font-size: 0.8em;
+    }
+}

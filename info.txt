@@ -21,7 +21,7 @@ We need to have a reference to this button inside Js using querySelector().
 querySelector is a way to tell your browser that you need the 'element' which has [id=""] ['#' is an id selector in js]
 Here we are talking to browser through the 'document.querySelector' API.
 
-Callback: when an event happens call this funciton.
+Callback: when an event happens call this funciton. [here a function is used to call on another function when the event happens]
 function clickEventHandler() {
     console.log("clicked!")
 
@@ -31,3 +31,19 @@ btnTanslate.addEventList("action", funciton() {})
 
 [Book: Eloquent Javascript]
 
+DOM: Document Object Model
+Every element on an html page is represented as a property of an object. This to access thise propertties we use methods like document.querySelector()
+
+Everything you do on a webpage triggers an event.
+
+You can plug your own callback or functionality in each of these and introduce cutome behavior.
+
+query for following elements:
+tag = "tagname"
+class = .classname
+id = #idname
+"element with attribute = elementname[attribute]"
+
+Fun examples of browser scripting: 
+accepting multiple requests on socials.
+refereshing and chekcing and booking movie tickets on sites.
