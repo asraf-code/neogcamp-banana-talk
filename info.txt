@@ -47,3 +47,8 @@ id = #idname
 Fun examples of browser scripting: 
 accepting multiple requests on socials.
 refereshing and chekcing and booking movie tickets on sites.
+
+<textarea col= >
+.innetText = ""
+
+Talking to server: call a mock server
