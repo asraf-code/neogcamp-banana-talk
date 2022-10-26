@@ -1,24 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;700&display=swap');
 
 /* defining variables */
+
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #f59e0b;
     --off-white: #f3f4f6;
     --dark-gray: rgb(114, 114, 114);
+    --width-break: 500px;
 }
 
 body {
     display: grid;
-    place-content: center;
-    row-gap: 2rem;
+    /* place-content: center; */
+    /* row-gap: 2rem; */
     margin: 0;
-    padding: 1rem;
+    /* padding: 1rem; */
+    
+
     
 }
 
 h1 {
     margin: auto;
 }
+
+.banner {
+    padding: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    background-color: #f59e0b;
+    width: 100%;
+}
+
 
 textarea {
     display: block;
@@ -29,11 +46,12 @@ textarea {
     border-width: medium;
     resize: none;
     max-width: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 button {
     margin: auto;
+    margin-top: 1rem;
     width: max-content;
     border-radius: 5px;
     padding: 1rem 2rem;
@@ -46,6 +64,7 @@ button {
     font-weight: bold;
     padding: 1rem;
     margin: auto;
+    margin-top: 3rem;
 }
 
 
@@ -58,6 +77,7 @@ button {
     padding: 1rem;
     border-width: medium;
     max-width: 100%;
+    overflow: scroll;
     
 }
 
@@ -86,4 +106,24 @@ button {
     p{
         font-size: 0.8em;
     }
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f59e0b;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+
+}
+
+.about-txt {
+    font-size: x-large;
+}
+
+.para-footer {
+    padding: 1rem;
+    max-width: var(--width-break);
+    margin: auto;
 }
