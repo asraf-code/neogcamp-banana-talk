@@ -32,7 +32,10 @@ btnTanslate.addEventList("action", funciton() {})
 [Book: Eloquent Javascript]
 
 DOM: Document Object Model
-Every element on an html page is represented as a property of an object. This to access thise propertties we use methods like document.querySelector()
+Every element on an html page is represented as a property of an object. This object is called Document Object Model (DOM) as it models the entire HTML document in an object.
+ Thus to access these properties we use 'methods' like document.querySelector()
+[Object is a data structure in Js. It consists of an array of "key:value" pairs.] [Everything in Js is an Object.] [When you create a new object the 'keys' become the properties of that object]
+[Accesors for object property are done using the (.) accessor]
 
 Everything you do on a webpage triggers an event.
 
