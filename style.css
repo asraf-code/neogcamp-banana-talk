@@ -18,15 +18,15 @@ body {
     /* place-content: center; */
     /* row-gap: 2rem; */
     margin: 0;
-    /* padding: 1rem; */
-    
-
-    
+    /* padding: 1rem; */ 
+    font-family: 'Noto Sans', sans-serif;
 }
 
 h1 {
     margin: auto;
 }
+
+
 
 .banner {
     padding: 2rem;
@@ -65,6 +65,8 @@ button {
     padding: 1rem;
     margin: auto;
     margin-top: 3rem;
+    display: block;
+    text-align: center;
 }
 
 
@@ -78,12 +80,14 @@ button {
     border-width: medium;
     max-width: 100%;
     overflow: scroll;
+   
     
 }
 
 
 
 #btn-translate {
+    display: block;
     
 }
 
@@ -108,13 +112,18 @@ button {
     }
 }
 
+footer {
+    position:sticky;
+    margin-top: 33rem;
+}
+
 .footer {
     padding: 1rem;
     text-align: center;
     background-color: #f59e0b;
     width: 100%;
     bottom: 0;
-    position: fixed;
+    
 
 }
 
