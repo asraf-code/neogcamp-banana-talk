@@ -1,5 +1,5 @@
 there are two ways to include JS in html:
-1. using <script> tag in the html file
+1. using <script> tag in the html file inside <head>
 2. using javascript file and linking it in the html file (<script src="app.js" type="text/javascript"></script>)
 
 
@@ -12,7 +12,11 @@ It is the purest form of something.
 
 VanillaJs is the most basic form of Javascipt without any frameworks or library.
 
-In javascript it is preferred to include <script> at the end of the <body>.
+-----------
+
+In javascript it is preferred to include <script> at the end of the <body>. This is because the HTML file be rendered from top to bottom and its is best practise to render script at the end.
+
+-----------
 
 <button>
 We need to have a reference to this button inside Js using querySelector().
@@ -23,15 +27,39 @@ The querySelector() method returns the first element that matches a CSS selector
 querySelector is a way to tell your browser that you need the 'element' which has [id=""] ['#' is an id selector in js]
 Here we are talking to browser through the 'document.querySelector' API.
 
-Callback: when an event happens call this funciton. [here a function is used to call on another function when the event happens]
-function clickEventHandler() {
-    console.log("clicked!")
+API - Application Programming interface
+If you want to program an application you use this interface.
+The end user is not an user, it is a program here.
+When you are talking to a program(app) (and you want to program something into it) you can use API.
+When you need to make the app understand you need to use APIs.
+
+Ex: readlineSync (API) used to talk to Node js.
+Ex: document.querySelector is an API you can use to talk to document (DOM) of a browser.
+Ex: addEventListener is an API which is used to add an event to a HTML element.
+
+-----------
+
+Users interact with an app by clicking, scrolling etc. To listen to this events we can use addEventListener to fetch these "actions" from the app (buttons, scroll over etc.)
 
 
 Event Listener
-btnTanslate.addEventList("action", funciton() {})
+btnTanslate.addEventList("action", clickEventHandler)
+
+Callback: when an event ("click") happens call this funciton. [here a function is used to call on another function when the event happens]
+
+function clickEventHandler() {
+    console.log("clicked!")
+}    
+
 
 [Book: Eloquent Javascript]
+
+
+-----------
+
+To take input from "textarea" tag reference it in app.js using its id="" and using clickEventHandler take and store the input value from textarea to  a variable in the JS app for further processing. 
+
+
 
 [
     The Document Object
@@ -61,26 +89,32 @@ Every element on an html page is represented as a property of an object. This ob
 
 ]
 
+----------
+
 Everything you do on a webpage triggers an event.
 
 You can plug your own callback or functionality in each of these and introduce cutome behavior.
 
 query for following elements:
 tag = "tagname"
-class = .classname
-id = #idname
-element with attribute = "elementname[attribute]"
+class = ".classname"
+id = "#idname"
+element with attribute = "elementname[attribute name=""]"
 
-Fun examples of browser scripting: 
+Fun examples of browser scripting (and querySelector): 
 accepting multiple requests on socials.
 refereshing and chekcing and booking movie tickets on sites.
 
+-------------
+
+<div id="output"> to give output using outputVAriable.innerText = "sentence";
 <textarea col= >
 .innetText = ""
 
+--------------
+
 Talking to server: call a mock server
-using:
-Postman
+using: Postman
 Browser: address bar
 Js: using fetch(url). This returns Json file as a response file from server.
 
