@@ -18,7 +18,7 @@ In javascript it is preferred to include <script> at the end of the <body>. This
 
 -----------
 
-<button>
+<button> [HTML element]
 We need to have a reference to this button inside Js using querySelector().
 [Using this reference we can style the html using Js. (DOM scripting)]
 
@@ -43,7 +43,7 @@ Users interact with an app by clicking, scrolling etc. To listen to this events 
 
 
 Event Listener
-btnTanslate.addEventList("action", clickEventHandler)
+btnTanslate.addEventListener("action", clickEventHandler)
 
 Callback: when an event ("click") happens call this funciton. [here a function is used to call on another function when the event happens]
 
@@ -57,7 +57,7 @@ function clickEventHandler() {
 
 -----------
 
-To take input from "textarea" tag reference it in app.js using its id="" and using clickEventHandler take and store the input value from textarea to  a variable in the JS app for further processing. 
+To take input from "textarea" tag, reference it in app.js using its id="" and using clickEventHandler take and store the input value from textarea to  a variable in the JS app for further processing. 
 
 
 
@@ -78,13 +78,14 @@ window.document or just document
 DOM: Document Object Model (API)
 Every element on an html page is represented as a property of an object. This object is called Document Object Model (DOM) as it models the entire HTML document in an object.
  Thus to access these properties we use 'methods' like document.querySelector()
+
 [Object is a data structure in Js. It consists of an array of "key:value" pairs.] [Everything in Js is an Object.] [When you create a new object the 'keys' become the properties of that object]
 [Accesors for object property are done using the (.) accessor]
 
 [
-    The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+    The Document Object Model (DOM) is a 'programming interface' for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as 'nodes and objects'; that way, programming languages can interact with the page.
 
-    A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript.
+    A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an 'object-oriented' representation of the web page, it can be modified with a scripting language such as JavaScript.
 
 
 ]
@@ -93,7 +94,7 @@ Every element on an html page is represented as a property of an object. This ob
 
 Everything you do on a webpage triggers an event.
 
-You can plug your own callback or functionality in each of these and introduce cutome behavior.
+You can plug your own callback or functionality in each of these and introduce custom behavior.
 
 query for following elements:
 tag = "tagname"
@@ -107,7 +108,7 @@ refereshing and chekcing and booking movie tickets on sites.
 
 -------------
 
-<div id="output"> to give output using outputVAriable.innerText = "sentence";
+<div id="output"> to give output using outputVariableJS.innerText = "sentence";
 <textarea col= >
 .innetText = ""
 
