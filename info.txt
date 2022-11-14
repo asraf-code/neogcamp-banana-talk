@@ -114,10 +114,75 @@ refereshing and chekcing and booking movie tickets on sites.
 
 --------------
 
+innerHTML:
+
+document.createElement()
+
+document.createTextNode()
+
+- insertBefore()
+- appendChild()
+
+
+
+
+
+
+
+
+--------------
+
+[
+    Making a call to the server - Server is where you do heavy processing and also where you save data. 
+
+    This is how you and others view your updates on different clients.
+
+    This is called Client Server Architecture - Client requests or submits data, and Server maintains data.
+]
+
+Network call from browser
+
 Talking to server: call a mock server
 using: Postman
-Browser: address bar
-Js: using fetch(url). This returns Json file as a response file from server.
+calling API from Browser: address bar for GET requests
+
+calling API using Js: using fetch(url). This returns Json file as a response file from [app] server.
+
+ When you get a repsonse: 
+ .then(response => response.json) [convert response (Readable Stream) to json to read the file data processed by the app]
+ After that:
+ .then(json => {
+    var translatedText = json.contents.translated;
+    outputDiv.innerText = translatedText; // output
+ }) [take the json, access the tranlsated field from the data and output to app]
+
+[
+    Promise: I am geting this data from server but not sure when server would respond - so once i get it will give it you - what should i do then - console.log
+
+    => Arrrow Functions in Js:
+
+    constructURL(textVariable) {
+        return "https:/" + "?" + "text=" + textVarible
+    }
+
+    fetch() - browser API. Used to fetch promises and then call a function to process it.
+
+    IT says you can go ahead with other execution  and dont wait on me. I will let you know when i get the data.
+
+    This is extremely important in browser. You dont want your user to not be able to click on something or everything to stop when browser is getting data. This is asynchronous programming.
+
+    After data received - give it a call back inside the .then() of promise.
+
+    .then - means that take return value of previous function as an input.
+
+    function doFetch(textVariable) {
+
+        fetch(constructURL(textVariable))
+        .then(repsones => response.json())
+        .then(json => console.log(json))
+    }
+]
+
 
 Ex:
 constructURL(text)
@@ -127,6 +192,8 @@ function errorHandler(error) {
     console.log("error occured", error)
 }
 .catch(errorJandler)
+
+here argument for errorHandler is taken from the callback function in fetch
 
 '=>' Arrow syntax to define functions [callback]. [arrow functions in Js]
 
